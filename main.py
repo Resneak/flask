@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     service_info = {
-        'title': "Daniel's Black SUV Service in Nashville, TN",
+        'title': "Daniel's 2 Black SUV Service in Nashville, TN",
         'description': "Looking for a Black SUV service with the latest model vehicles available, you are at the right place. If you need to go places like Jack Daniel's disterilly, Graceland in Memphis, TN, or even the surrounding casinos, just look below for my contact information and feel free to ask for a quote.",
         'rates': {
             'hourly': '$100 per hour',
