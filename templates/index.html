@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{{ info.title }}</title>
+
+</head>
+<body>
+    <h1>{{ info.title }}</h1>
+    <p>{{ info.description }}</p>
+
+    <h2>Rates</h2>
+    <ul>
+        <li>Hourly: {{ info.rates.hourly }}</li>
+        <li>Daily: {{ info.rates.daily }}</li>
+        <li>Weekly: {{ info.rates.weekly }}</li>
+    </ul>
+
+    <h2>Car Images</h2>
+    <ul>
+        {% for image in info.car_images %}
+        <li><img src="{{ url_for('static', filename=image) }}" alt="Car Image" class="car-image"></li>
+        {% endfor %}
+    </ul>
+
+    <h2>Contact Information</h2>
+    <p>Phone: {{ info.contact_info.phone }}</p>
+    <p>Email: {{ info.contact_info.email }}</p>
+</body>
+</html>
