@@ -1,4 +1,49 @@
+@font-face {
+    font-family: 'GPD';
+    src: url('./fonts/gpd.ttf') format('truetype'); /* Replace 'your-font-file' with the actual font file name and format */
+    /* Add additional src lines if you have different font file formats */
+  }
+
+@font-face {
+    font-family: 'LGC';
+    src: url('./fonts/lgc.ttf') format('truetype'); /* Replace 'your-font-file' with the actual font file name and format */
+    /* Add additional src lines if you have different font file formats */
+}
+
 .car-image {
-    max-width: 20%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
     height: auto;
+    object-fit: contain;
+    overflow: hidden;
+
+}
+
+body {
+    background-color: #8b7c7c;
+  }
+
+h1 {
+    font-size: 64px;
+    font-family: 'GPD', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'GPD', sans-serif;
+}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Use flexbox */
+  }
+  
+  ul li {
+    margin-right: 10px; /* Add spacing between images */
+  }
+
+p {
+    font-size: 25px;
+    font-family: 'LGC', sans-serif;
 }
